@@ -10,7 +10,7 @@ module.exports = {
    * Without this, webpack-dev-server does not work with .browserslistrc file
    */
   target: 'web',
-  entry: './index.js',
+  entry: './index.ts',
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: '[name].bundle.js',
@@ -21,7 +21,7 @@ module.exports = {
   },
   devtool: 'eval',
   resolve: {
-    extensions: ['.js', '.json', '.scss', '.css'],
+    extensions: ['.js', '.ts', '.json', '.scss', '.css'],
     alias: {
       assets: path.join(__dirname, 'src/assets'),
     },
@@ -45,6 +45,7 @@ module.exports = {
         exclude: /node_modules/,
         use: ['babel-loader'],
       },
+      { test: /\.tsx?$/, loader: 'ts-loader' },
     ],
   },
   plugins: [
