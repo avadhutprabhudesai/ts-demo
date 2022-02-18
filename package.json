@@ -1,7 +1,7 @@
 {
-  "name": "static-project-base",
+  "name": "typescript-demo",
   "version": "1.0.0",
-  "description": "Basic setup for static sites",
+  "description": "A demo project for exploring the basics of Typescript",
   "main": "index.js",
   "scripts": {
     "test": "jest --watch",
@@ -72,13 +72,15 @@
     "stylelint-config-standard": "^20.0.0",
     "stylelint-prettier": "^1.2.0",
     "stylelint-webpack-plugin": "^2.1.1",
+    "ts-loader": "^9.2.6",
     "webpack": "^5.24.2",
     "webpack-cli": "^4.5.0",
     "webpack-dev-server": "^3.11.2"
   },
   "dependencies": {
-    "core-js": "^3.21.0",
-    "regenerator-runtime": "^0.13.9"
+    "@babel/runtime": "^7.17.2",
+    "@types/uuid": "^8.3.4",
+    "uuid": "^8.3.2"
   },
   "config": {
     "commitizen": {
