@@ -3,6 +3,7 @@ import Validatable from '../interfaces/IValidatable';
 import ProjectState from './ProjectState';
 import { v4 as uuidv4 } from 'uuid';
 import Component from './Component';
+import ProjectType from '../enums/ProjectType';
 /**
  * Render the form to add the project
  */
@@ -91,7 +92,7 @@ class ProjectInput extends Component<HTMLFormElement> {
         title,
         description,
         numOfPeople: peopleCount,
-        isActive: true,
+        type: ProjectType.ACTIVE,
       });
     }
   }

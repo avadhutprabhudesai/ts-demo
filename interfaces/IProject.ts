@@ -1,9 +1,11 @@
+import ProjectType from '../enums/ProjectType';
+
 interface Project {
   id: string;
   title: string;
   description: string;
   numOfPeople: number;
-  isActive: boolean;
+  type: ProjectType;
 }
 
 export default Project;
