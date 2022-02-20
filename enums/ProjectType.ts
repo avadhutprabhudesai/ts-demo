@@ -1,6 +1,6 @@
-enum ProjectTypes {
+enum ProjectType {
   ACTIVE = 'active',
   FINISHED = 'finished',
 }
 
-export default ProjectTypes;
+export default ProjectType;
